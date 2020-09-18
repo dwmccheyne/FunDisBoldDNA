@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_DNABOLD_FORM_LBL_DNABOLD_CREATED_BY" description="COM_DNABOLD_FORM_DESC_DNABOLD_CREATED_BY" hidden="true" hint="COM_DNABOLD_FORM_LBL_DNABOLD_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_DNABOLD_FORM_LBL_DNABOLD_MODIFIED_BY" description="COM_DNABOLD_FORM_DESC_DNABOLD_MODIFIED_BY" hidden="true" hint="COM_DNABOLD_FORM_LBL_DNABOLD_MODIFIED_BY"/>
+    <field name="record_id" required="true" message="Must have record ID" label="COM_DNABOLD_FORM_LBL_DNABOLD_RECORD_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_RECORD_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_RECORD_ID"/>
+    <field name="scientific_name" label="COM_DNABOLD_FORM_LBL_DNABOLD_SCIENTIFIC_NAME" description="COM_DNABOLD_FORM_DESC_DNABOLD_SCIENTIFIC_NAME" hint="COM_DNABOLD_FORM_LBL_DNABOLD_SCIENTIFIC_NAME"/>
+    <field name="bold_id" label="COM_DNABOLD_FORM_LBL_DNABOLD_BOLD_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_BOLD_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_BOLD_ID"/>
+    <field name="group_id" label="COM_DNABOLD_FORM_LBL_DNABOLD_GROUP_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_GROUP_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_GROUP_ID"/>
+    <field name="step" default="1" label="COM_DNABOLD_FORM_LBL_DNABOLD_STEP" description="COM_DNABOLD_FORM_DESC_DNABOLD_STEP" hint="COM_DNABOLD_FORM_LBL_DNABOLD_STEP"/>
+    <field name="genbank_id" label="COM_DNABOLD_FORM_LBL_DNABOLD_GENBANK_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_GENBANK_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_GENBANK_ID"/>
+    <field name="mycomap_id" label="COM_DNABOLD_FORM_LBL_DNABOLD_MYCOMAP_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_MYCOMAP_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_MYCOMAP_ID"/>
+    <field name="fungarium_url" label="COM_DNABOLD_FORM_LBL_DNABOLD_FUNGARIUM_URL" description="COM_DNABOLD_FORM_DESC_DNABOLD_FUNGARIUM_URL" hint="COM_DNABOLD_FORM_LBL_DNABOLD_FUNGARIUM_URL"/>
+    <field name="mycoportal_id" label="COM_DNABOLD_FORM_LBL_DNABOLD_MYCOPORTAL_ID" description="COM_DNABOLD_FORM_DESC_DNABOLD_MYCOPORTAL_ID" hint="COM_DNABOLD_FORM_LBL_DNABOLD_MYCOPORTAL_ID"/>
+    <field name="cover_image" directory="" type="media" label="COM_DNABOLD_FORM_LBL_DNABOLD_COVER_IMAGE" description="COM_DNABOLD_FORM_DESC_DNABOLD_COVER_IMAGE" hint="COM_DNABOLD_FORM_LBL_DNABOLD_COVER_IMAGE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>
